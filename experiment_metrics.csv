@@ -1,0 +1,6 @@
+Condition_Code,Strategy,Trainable_Params,Learning_Rate,Epochs_Converged,Training_Time_Sec,Best_Val_Acc,Test_Acc,Test_Macro_F1
+B1_Scratch,From Scratch,11181642,1e-3,17,92.13,0.4295,0.48,0.4699
+B2_Feature_Extraction,Feature Extraction,5130,1e-3 (fc only),25,125.34,0.953,0.9333,0.9327
+B3_Fine_Tuning,Progressive Fine-Tuning,8398858,"layer4: 1e-4, fc: 1e-3",12,57.91,0.9732,0.9467,0.9467
+B4_Augmented_FT,Fine-Tuning + Augmentation,8398858,"layer4: 1e-4, fc: 1e-3",7,48.27,0.953,0.9467,0.9461
+B5_MobileNetV3_Small,MobileNetV3 (Feature Ext.),10250,1e-3,14,91.48,0.9463,0.9067,0.9063
